@@ -71,3 +71,16 @@
 最后是β多样性分析，分析方法有PCA、PCoA、NMDS、CA等
 
 
+> 组装
+**宏基因组的重头戏是基因组组装**
+
+组装原理是根据reads之间重叠的部分将reads连接在一起形成Contig，再根据成对的reads，
+一边于某个Contig重叠而另一边与另一个Contig重叠，这样将两个Contig联系起来，构成Scaffold。
+
+因为宏基因组中混合了众多的微生物基因组，因此它的拼接是比较困难的，不确定哪些reads属于哪个物种，
+因此拼接出来的是许多的小片段，一般保留大于300bp或500bp的序列来进行下一步的分析。
+
+宏基因组拼接软件一般有MegaHIT、idba_ud、SOAPdenove和Spades，其中MegaHIT消耗的内存少，速度快，
+它与idba_ud一样都可以设定好一个Kmer范围，再分别根据每个Kmer进行拼接，最后选择一个最优的拼接结果。Spades还合适与单细胞测序的拼接。
+
+![1](https://github.com/nanshanjin/metagenomics/blob/master/gap.PNG)
