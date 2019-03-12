@@ -57,3 +57,17 @@
 
 ![1](https://github.com/nanshanjin/metagenomics/blob/master/1.PNG)
 
+接着展示各样品中的物种分布以及各样本和所有样品优势物种的分析。
+
+![1](https://github.com/nanshanjin/metagenomics/blob/master/1.PNG)
+![1](https://github.com/nanshanjin/metagenomics/blob/master/1.PNG)
+![1](https://github.com/nanshanjin/metagenomics/blob/master/1.PNG)
+
+还可以对样品进行物种相似性与差异分析。相似性采用Anosim分析方法。差异分析可采用秩和检验方法，
+也可以通过在线的LEfSe和本地是STAMP进行分析。
+
+![1](https://github.com/nanshanjin/metagenomics/blob/master/1.PNG)
+
+最后是β多样性分析，分析方法有PCA、PCoA、NMDS、CA等
+
+
